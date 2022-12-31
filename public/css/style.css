@@ -1,0 +1,997 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	background-color: #EEEEEE;
+}
+
+.antialiased{
+	background-color:white
+}
+.dash_board_wrapper{
+	background-color: #EEEEEE;
+	height: 100%;
+}
+.main{
+
+	height: 100%;;
+}
+
+.header{
+	width:100%;
+	height: 6vh;
+	background-color: black;
+	position: fixed;
+	top:0;
+	z-index: 10;
+}
+.header p{
+	color:white;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.game_main_img img{
+	position: relative;
+	width: 100%;
+	height:70vh;
+}
+
+.game_main_img p{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	margin-top:-43vh;
+	margin-left: -15vw;
+	color:white;
+}
+
+
+
+.checked {
+	color: orange;
+}
+.unchecked {
+	color: grey;
+}
+
+
+.confirm_yellow_star {
+	color: #ffcc00
+}
+
+.confirm_gray_star {
+	color: grey;
+}
+
+.login_page{
+	background-color: #EEEEEE;
+}
+
+
+.login_top{
+	background-color: #EEEEEE;
+}
+
+.login_top form{
+	width:100%;
+	text-align: center;
+}
+
+.login_input {
+
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+
+.introduction_text{
+	font-family: "Roboto", sans-serif;
+	outline: 0;
+	overflow-wrap: anywhere;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 14px;
+	height:100px;
+	overflow-wrap:  break-word;
+	background: #f2f2f2;
+}
+
+.login_button_wrapper{
+	width: 100%;
+	text-align: center;
+}
+.login_button{
+	color: white;
+	background-color: #6091d3;
+	width:200px;
+	position: relative;
+	max-width: 360px;
+	margin-top:30px;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.login_back {
+	margin-top: 20px;
+}
+
+.ml-3{
+	text-align:center;
+}
+
+.contact form {
+	border-radius: 20px;
+
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 650px;
+	margin: 40px auto 10px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+}
+
+
+
+.review_main{
+	font-size: 25px;
+}
+
+.form label{
+	width: 100%;
+
+}
+.review_stars{
+	font-size: 10px;
+}
+
+.search_button{
+	width:100%;
+	text-align: center;
+	margin-top: 7vh;
+	font-size: 4vw;
+}
+
+.search_back {
+	margin-bottom: 5vh;
+	margin-right: 5vw;
+	text-align: right;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+.search_back_wrapper{
+	position: fixed;
+	z-index: 5;
+	top: 35;
+	background-color: black;
+	width: 100%;
+	height:40px;
+}
+
+.search_back_wrapper a{
+	color: white;
+}
+
+
+.search_button a{
+	border-bottom:2.5px solid;
+}
+
+
+.mypage{
+	width:100%;
+	text-align: center;
+	margin-top: 7vh;
+	font-size: 4vw;
+}
+.mypage a{
+	border-bottom:2.5px solid;
+}
+
+.login_menu{
+	font-size: 30px;
+	display: flex;
+	flex-flow: column;
+	width: 100%;
+	text-align: center;
+
+}
+
+.login{
+	margin-top: 7vh;
+}
+.back{
+	text-align: center;
+	font-size: 20px;
+	color:gray;
+	margin-top: 10px;
+}
+
+
+.logout_form{
+	width: 100%;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.logout_button{
+	font-size: 20px;
+	text-decoration: underline;
+
+}
+
+.dash_board{
+	border-radius: 20px;
+	max-width: 750px;
+	background-color: #FFFFFF;
+	position: relative;
+	z-index: 1;
+	margin: 40px auto 100px;
+	padding: 60px;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+
+}
+.registration{
+	margin-top:3vh;
+	margin-bottom: 50px;
+}
+
+
+.name_list{
+	width: 100%;
+	margin-top: 3vh;
+
+
+
+}
+
+
+.profile_list{
+	text-align: center;
+	width:100%;
+	border-bottom: #999 solid;
+	padding-bottom: 30px;
+}
+
+.profile_list button{
+	width:90%;
+
+}
+
+.mypage_head{
+	height: 100px;
+}
+
+.user_name{
+	display:flex;
+	font-size: 20px;
+	margin-right:30px;
+}
+
+.top_image{
+	width: 100%;
+	margin-left: 4vw;
+}
+
+
+.top_image img{
+
+	width: 135px;
+	height: 150px;
+}
+.profile_user_name{
+	width: 100%;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 2.2em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.mypage_top{
+	width:100%;
+	display: flex;
+	margin-top: 30px;
+	gap:10%;
+}
+
+
+.mypage_create{
+	color: #00662d;
+	text-shadow: -1px -1px 1px #00ff71;
+	border-bottom: 5px solid #00662d;
+}
+
+.mypage_button {
+	width:100%;
+
+}
+
+.mypage_button a {
+	text-align: center;
+	width:240px;
+	height:150px;
+	background: #eee;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 4vw;
+	font-size: 1.6em;
+	padding: 10px 25px;
+	color: #313131;
+	transition: 0.3s ease-in-out;
+
+	border-radius: 20px;
+}
+
+.mypage_button a:hover {
+	background: #313131;
+	color: #FFF;
+}
+
+.my_review {
+	width:100%;
+
+}
+
+.my_review a {
+	text-align: center;
+	width:440px;
+	height:150px;
+	background: #eee;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px auto;
+	font-size: 1.6em;
+	padding: 10px 25px;
+	color: #313131;
+	transition: 0.3s ease-in-out;
+	border-radius: 20px;
+}
+.my_review a:hover {
+	background: #313131;
+	color: #FFF;
+}
+
+
+.profile_user_game{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.profile_user_game a {
+	position: relative;
+	margin-left: 8vw;
+	justify-content: space-around;
+	margin: 0 auto;
+	font-size: 1.3em;
+	color: #313131;
+	transition: 0.3s ease-in-out;
+	padding-top:20px;
+
+}
+
+
+
+
+.self_introduction p{
+
+	position: relative;
+
+	margin: 0 auto;
+	font-size: 1.2em;
+
+	transition: 0.3s ease-in-out;
+}
+
+
+.profile_user_introducution{
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.profile_user_introducution a{
+
+	white-space: pre-wrap;
+
+	position: relative;
+
+
+	margin: 0 auto;
+	font-size: 1.2em;
+	color: #313131;
+	transition: 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+.mypage_button_post {
+	text-align: right;
+
+
+}
+
+.mypage_button_post a{
+	text-align: center;
+	width:240px;
+	height:150px;
+	background: #eee;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 1.6em;
+	padding: 10px 25px;
+	color: #313131;
+	transition: 0.3s ease-in-out;
+	border-radius: 20px;
+	margin-right: 4vw;
+}
+
+.mypage_button_post a:hover {
+	background: #313131;
+	color: #FFF;
+}
+
+
+.review_main{
+	width: 100%;
+}
+.review_main h4{
+	text-align: center;
+}
+
+.textbox{
+	text-align: center;
+}
+.review_text {
+
+	width:600px;
+	padding: 0.5em 1em;
+	font-weight: bold;
+	background: #FFF;
+	border: solid 3px #6091d3;/*線*/
+	border-radius: 10px;/*角の丸み*/
+	margin-top: 10px;
+	margin-bottom:5px;
+}
+.review_button{
+	text-align: center;
+	margin-top: 4vh;
+	margin-bottom: 30px;
+}
+
+
+
+
+.send_button {
+	background:#00662d;/* 背景色 */
+	color: #fff; /* 文字色 */
+	padding: 16px 40px; /* 上下の余白、左右の余白 */
+	text-decoration: none; /* デフォルトで入る下線を消す */
+	border-radius: 30px; /* 角を丸くする */
+	transition-property: opacity;
+	-webkit-transition-property: opacity;
+	transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	margin-right: 35px;
+}
+
+.send_button:hover {
+	opacity: .7;
+}
+
+.back_button {
+	background:#eee;/* 背景色 */
+
+	padding: 16px 40px; /* 上下の余白、左右の余白 */
+	text-decoration: none; /* デフォルトで入る下線を消す */
+	border-radius: 30px; /* 角を丸くする */
+	transition-property: opacity;
+	-webkit-transition-property: opacity;
+	transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	margin-left:35px;
+}
+
+.back_button:hover {
+	opacity: .7;
+}
+
+.review_stars{
+	margin-left: 28px;
+}
+.review_stars dd{
+	font-size: 20px;
+
+
+	margin-top: 10px;
+	margin-bottom:5px;
+
+}
+
+dt label{
+
+	padding-bottom: 20px;
+}
+
+.star_wrapper{
+	margin-bottom: 20px;
+}
+
+.errorsText{
+	color:red;
+}
+
+
+#user_id{
+	display: none;
+}
+
+
+.test th{
+	background-color: #999;
+	color:fff;
+	padding:5px 10px;
+}
+
+.test td{
+	border: solid;
+	color: #999;
+	padding: 5px 10px ;
+}
+.contents_wrapper{
+
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 800px;
+	margin: 10px auto 10px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contents{
+	width:100%;
+	margin-bottom: 30px;
+}
+
+.content_table{
+	margin-left: 10vw;
+	margin-right:10vw;
+	border-top: solid #aaa;
+	border-right: solid #aaa;
+	border-left: solid #aaa;
+
+
+
+}
+#contents h1{
+	width:240px;
+	padding: 30px;
+	background-color: #F0FFFF;
+	border-right: solid #aaa;
+	border-bottom: solid #aaa;
+
+}
+#contents p{
+	width:100%;
+	padding: 30px;
+	border-bottom: solid #aaa;
+
+}
+
+#word p{
+	text-align: center;
+	font-size: 2.5em;
+	padding: 30px;
+}
+
+
+
+.confirm_game_title{
+	display: flex;
+
+}
+
+.complete{
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 800px;
+	margin: 100px auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.complete h4{
+	font-size: 30px;
+}
+.complete p{
+	margin-top: 15px;
+}
+.complete_back{
+	text-align: center;
+	margin-top: 4vh;
+}
+
+.complete_back a{
+	font-size: 28px;
+	text-decoration:underline;
+
+}
+
+.login_top_text{
+	width: 100%;
+	margin-top: 50px;
+	text-align: center;
+	font-weight: bolder;
+}
+.login_top_text h1{
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+
+
+
+.login_form {
+	margin-top: 30px;
+}
+
+.login_form form{
+
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.py-12{
+	background-color: #EEEEEE;
+}
+
+.my_review_list {
+	border-radius: 20px;
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 650px;
+	margin: 10px auto 10px;
+	padding: 45px;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+}
+
+.text_list{
+	margin-left:7vw;
+}
+
+.my_review_wrapper{
+	margin-top: 100px;
+}
+.fadein {
+	opacity: 0;
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.myreview_top{
+	display: flex;
+
+	margin-bottom: 20px;
+	border-bottom: solid 1px silver;
+
+}
+.myreview_title{
+	border-bottom: solid 1px silver;
+
+}
+.myreview_content{
+	padding:10px;
+	margin-bottom: 20px;
+}
+
+.myreview_top a{
+	white-space: nowrap;
+	width:100%;
+
+}
+
+
+.myreview_button{
+	display: flex;
+	top: 30;
+	right: 40;
+	position: absolute;
+	gap:10px;
+
+}
+.edit_button{
+	display: flex;
+}
+
+
+.detail{
+	border-radius: 20px;
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 850px;
+	margin: 50px auto 10px;
+	padding: 45px;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
+}
+
+.detail_top{
+	border-bottom: solid gray;
+	font-size: 30px;
+
+}
+
+.detail_top h1{
+	font-weight: bold;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.detail_user_name{
+	font-size: 1.4em;
+	margin-top: 20px;
+	margin-right: 4vw;
+	text-align: end;
+}
+
+.detail_star{
+	margin-bottom: 20px;
+	font-size: 1.5em;
+}
+
+.detail_review_title{
+	font-size: 25px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-weight: bolder;
+}
+
+.detail_review_coment{
+	border: solid #A9A9A9;
+	font-size: 0.8em;
+	padding: 15px;
+}
+
+.reset{
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 800px;
+	margin: 70px auto 10px;
+	padding: 45px;
+	text-align: center;
+	height: 80%;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.reset h1{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+.reset_message{
+	margin-top: 20px;
+}
+.reset_contents{
+	margin-top: 60px;
+}
+.edit_content{
+	margin-top:60px;
+}
+
+.active {
+	color: red
+}
+
+.admin_table td{
+	border-bottom: solid gray;
+}
+
+.container{
+	margin-top: 50px;
+}
+
+
+
+.container table td{
+ border: solid #CCCCCC 1px;
+ vertical-align: middle;
+}
+
+.admin_coment{
+	max-width: 300px;
+}
+
+
+
+.container h1{
+	font-weight: bold;
+	font-size: 2.5em;
+	margin-bottom: 20px;
+}
+
+.admin{
+	width: 100%;
+	text-align: center;
+}
+
+.admin_star{
+	width: 113px;
+}
+
+.admin p{
+	font-size: 1.4em;
+	color: red;
+	text-align: center;
+}
+
+
+.btn-danger {
+	color: #fff;
+	background-color: #dc3545;
+	border-color: #dc3545;
+	width: 70px;
+}
+.btn-red {
+	color: #fff;
+	background-color: #dc3545;
+	border-color: #dc3545;
+	text-align: center;
+	width: 250px;
+	height: 70px;
+	font-size: 1.4em;
+	margin-top:20px;
+}
+
+.btn-red:hover {
+	color: #fff;
+	background-color: #bb2d3b;
+	border-color: #b02a37;
+}
+
+
+.search_form{
+	width:100%;
+	margin-top: 120px;
+	margin-bottom: 40px;
+
+}
+
+.search{
+	margin-left: 5vw;
+	margin-top: 5vh;
+
+}
+
+.search_box{
+	height:30px;
+	width: 400px;
+}
+
+.search_back_wrapper{
+	position: fixed;
+	top: 35;
+	background-color: black;
+	width: 100%;
+	height:40px;
+}
+
+.search_back_wrapper a{
+	color: white;
+}
+
+
+.search_back{
+	margin-bottom: 5vh;
+	margin-right: 5vw;
+	text-align: right;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+
+.search_submit{
+	height: 30px;
+}
+
+.review_list{
+	width: 100%;
+}
+
+.review_list table{
+	width: 70vw;
+	text-align: center;
+	margin-left: 18vw;
+	margin-bottom: 50px;
+}
+
+
+.review_list th{
+	background-color: #999;
+	color:fff;
+	padding:5px 10px;
+	font-size: 2.0em;
+}
+
+.review_list td{
+	border: solid 1px #aaa;
+	font-size: 1.0em;
+	padding: 5px 10px;
+	width:40vw;
+}
