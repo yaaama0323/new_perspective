@@ -21,6 +21,9 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->string('favorite_game',50)->nullable();
+            $table->string('introduction',300)->nullable();
+            $table->Integer('role')->default(0);
         });
     }
 
